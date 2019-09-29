@@ -1,9 +1,8 @@
-{{ this.fetchedTeamData[0]['Live Points'] }}
 <template>
   <div class="main-container" @click="extend">
     <div class="header-container">
       <span class="title-text">
-        FPL <big>|</big> Aspside
+        FPL <big>|</big> Het$jakten
       </span>
       <!-- <span class="gw-text" v-if="gw">
         GW# {{ gw }}
@@ -110,7 +109,7 @@ export default {
     },
     async fetchData (){
       this.loading = true;
-      const url = "https://cors-anywhere.herokuapp.com/https://www.anewpla.net/fpl/league/json.php?id=7168";
+      const url = "https://cors-anywhere.herokuapp.com/https://www.anewpla.net/fpl/league/json.php?id=29035";
       const eventResponse = await fetch(url, this.cred)
         .then(response => response.json())
       let teamData = await eventResponse.data;
@@ -137,8 +136,8 @@ html {
   box-sizing: border-box;
   width: 100%;
   height: 100vh;
-  background: rgb(0,61,120);
-  background: linear-gradient(0deg, rgba(0,61,120,1) 0%, rgba(96,177,255,1) 100%);
+  background: rgb(0,61,120,1);
+  background: linear-gradient(0deg, rgba(0,61,120,1) 0%, rgba(178,255,96,1) 100%);
   background-attachment: fixed !important;
 }
 

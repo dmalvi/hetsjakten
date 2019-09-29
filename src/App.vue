@@ -1,16 +1,16 @@
 <template>
   <div id="app">
-    <Aspside />
+    <Hetsjakten />
   </div>
 </template>
 
 <script>
-import Aspside from './components/Aspside'
+import Hetsjakten from './components/Hetsjakten'
 
 export default {
   name: 'app',
   components: {
-    Aspside
+    Hetsjakten
   }
 }
 </script>

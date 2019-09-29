@@ -1,3 +1,3 @@
 module.exports = {
- publicPath: '/vue-fpl2'
+ publicPath: '/hetsjakten'
 }
