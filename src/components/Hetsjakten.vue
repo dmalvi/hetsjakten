@@ -109,7 +109,7 @@ export default {
     },
     async fetchData (){
       this.loading = true;
-      const url = "https://cors-anywhere.herokuapp.com/https://www.anewpla.net/fpl/league/json.php?id=29035";
+      const url = "https://cors-anywhere.herokuapp.com/https://www.anewpla.net/fpl/league/json.php?id=563020";
       const eventResponse = await fetch(url, this.cred)
         .then(response => response.json())
       let teamData = await eventResponse.data;
@@ -248,7 +248,7 @@ h2, h3{
   text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
                0px 8px 13px rgba(0,0,0,0.1),
                0px 18px 23px rgba(0,0,0,0.1);
-  font-size: 48px;
+  font-size: 40px;
 }
 
 .gw-text {
